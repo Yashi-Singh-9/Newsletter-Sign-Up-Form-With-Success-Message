@@ -1,0 +1,220 @@
+@font-face
+    font-family: 'Roboto'
+    src: url('assets/fonts/Roboto-Regular.ttf') format('truetype')
+    font-weight: 400
+    font-style: normal
+
+@font-face
+    font-family: 'Roboto'
+    src: url('assets/fonts/Roboto-Bold.ttf') format('truetype')
+    font-weight: 700
+    font-style: normal
+
+$tomato: hsl(4, 100%, 67%)
+$dark-slate-grey: hsl(234, 29%, 20%)
+$charcoal-grey: hsl(235, 18%, 26%)
+$grey: hsl(231, 7%, 60%)
+$white: hsl(0, 0%, 100%)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+    font-size: 1rem
+    background-color: $charcoal-grey
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    height: 100vh
+
+    @media(max-width: 768px)
+        height: auto
+
+.container
+    max-width: 950px
+    width: 100%
+    background-color: $white
+    border-radius: 1.9rem
+    overflow: hidden
+
+    .card
+        .content
+            display: flex
+            flex-direction: row
+
+            @media(max-width: 768px)
+                flex-direction: column-reverse
+
+            .text-section,
+            .image-section
+                padding: 1.5rem
+                flex: 1
+            
+            .text-section
+                padding: 3rem !important
+                margin: 50px 10px
+            
+                h1
+                    font-size: 3.5rem
+                    margin-bottom: 1.3rem
+                    color: $dark-slate-grey
+
+                p 
+                    color: $dark-slate-grey
+                    margin-bottom: 2rem
+
+                ul 
+                    margin-bottom: 2.8rem
+                    list-style-type: none
+                    align-self: center
+
+                    li
+                        margin-bottom: 1.2rem
+                        display: flex
+                        gap: 15px 
+
+                form 
+                    display: flex
+                    flex-direction: column
+
+                    .mail
+                        display: flex
+                        justify-content: space-between
+                        margin-bottom: 0.8rem
+
+                        @media(max-width: 480px)
+                            flex-direction: column
+                            gap: 15px
+
+                        label
+                            color: $dark-slate-grey
+                            font-weight: 700
+                            font-size: 1.2rem
+
+                        .error-message
+                            color: $tomato
+                            font-weight: 700
+                            font-size: 1rem
+                    
+                    input
+                        padding: 1.2rem
+                        border-radius: 8px
+                        border: 1px solid $grey
+                        font-family: inherit
+                        color: $dark-slate-grey
+                        font-size: 1.1rem
+                        margin-bottom: 1rem
+                        cursor: pointer
+
+                        &:hover,
+                        &:focus
+                            outline: none
+                            border-color: $charcoal-grey
+
+                    button
+                        padding: 1.2rem
+                        border-radius: 8px
+                        border: none
+                        font-family: inherit
+                        font-weight: 700
+                        font-size: 1rem
+                        cursor: pointer
+                        color: $white
+                        background-color: $dark-slate-grey
+                        transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease
+
+                        &:hover
+                            background: linear-gradient(to right, #FF527B, #FF6A3A)
+                            box-shadow: 0 16px 24px lighten(#FF6A3A, 10%)
+                            transform: translateY(-2px)
+
+            .image-section
+                display: flex
+                align-items: center
+                justify-content: center
+
+                @media(max-width: 768px)
+                    padding: unset
+                    display: block
+
+.success-card
+    background-color: $white
+    padding: 6rem
+    max-width: 40rem
+    width: 100%
+    border-radius: 2.5rem
+    overflow: hidden
+
+    @media(max-width: 768px)
+        padding: 3.5rem
+        max-width: unset
+
+    img
+        margin-bottom: 2rem
+
+    h1
+        font-size: 4.2rem
+        color: $dark-slate-grey
+        max-width: 44rem
+        width: 100%
+        margin-bottom: 1.3rem
+
+        @media(max-width: 375px)
+            font-size: 3rem
+            word-wrap: break-word
+
+    p 
+        font-size: 1.15rem
+        max-width: 27rem
+        width: 100%
+        line-height: 1.6
+        margin-bottom: 2.5rem
+
+        @media(max-width: 768px)
+            max-width: unset
+
+        .email-confirmation
+            font-weight: 700
+            word-wrap: break-word
+
+    button
+        padding: 1.5rem
+        border-radius: 8px
+        border: none
+        font-family: inherit
+        font-weight: 700
+        font-size: 1.2rem
+        cursor: pointer
+        max-width: 450px
+        width: 100%
+        color: $white
+        background-color: $dark-slate-grey
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease
+
+
+        @media(max-width: 768px)
+            max-width: unset
+
+        &:hover
+            background: linear-gradient(to right, #FF527B, #FF6A3A)
+            box-shadow: 0 16px 24px lighten(#FF6A3A, 10%)
+            transform: translateY(-2px)
+
+.hidden
+    display: none
+
+.attribution
+    font-size: 1.1rem
+    text-align: center
+    color: $white
+    margin-top: 1rem
+
+    a,
+    a:visited 
+        color: $tomato
+        text-decoration: none

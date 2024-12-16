@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+    <div class="container">
+      <!-- Sign-up form start -->
+      <div class="card form-card" id="form-card">
+          <div class="content">
+            <div class="text-section">
+              <h1>Stay updated!</h1>
+              <p>Join 60,000+ product managers receiving monthly updates on:</p>
+              <ul>
+                <li>
+                  <img src="assets/images/icon-list.svg" alt=""> Product discovery and building what matters
+                </li>
+                <li>
+                  <img src="assets/images/icon-list.svg" alt=""> Measuring to ensure updates are a success
+                </li>
+                <li>
+                  <img src="assets/images/icon-list.svg" alt=""> And much more!
+                </li>
+              </ul>
+              <form action="#" id="subscription-form" novalidate>
+                <div class="mail">
+                  <label for="email">Email address</label>
+                  <span class="error-message" id="error-message"></span>
+                </div>
+                <input type="email" name="email" id="email" placeholder="email@company.com" required>
+                <button type="submit" id="subscribe-btn">Subscribe to monthly newsletter</button>
+                <!-- Sign-up form end -->
+              </form>
+            </div>
+            <div class="image-section">
+              <picture>
+                <source srcset="assets/images/illustration-sign-up-mobile.svg" media="(max-width: 768px)">
+                <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 769px)">
+                <img src="assets/images/illustration-sign-up-desktop.svg" alt="Sign-up illustration" style="width: 100%;">
+              </picture>              
+            </div>
+          </div>
+      </div>
+    </div>  
+    <!-- Success message start -->
+  <div class="success-card hidden" id="success-card">
+    <img src="assets/images/icon-success.svg" alt="">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span class="email-confirmation">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+  <button type="submit" id="dismiss-btn">Dismiss message</button>
+    <!-- Success message end -->
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/yashi-singh-b4143a246" target="_blank">Yashi Singh</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
