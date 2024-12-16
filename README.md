@@ -44,8 +44,8 @@ Users should be able to:
 
 ### Links
 
-- **Solution URL**: [Solution Site](https://your-solution-url.com)
-- **Live Site URL**: [Live Site](https://your-live-site-url.com)
+- **Solution URL**: [Solution Site](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-success-message-RavD3T1xgF)
+- **Live Site URL**: [Live Site](https://yashi-singh-9.github.io/Newsletter-Sign-Up-Form-With-Success-Message/)
 
 ---
 
@@ -76,7 +76,7 @@ button
     cursor: pointer
     color: #fff
     background-color: $dark-slate-grey
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease
 
     &:hover
         background: linear-gradient(to right, #FF527B, #FF6A3A)
