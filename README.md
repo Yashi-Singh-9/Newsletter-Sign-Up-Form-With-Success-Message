@@ -40,7 +40,7 @@ Users should be able to:
 
 **Mobile View**
 
-![Mobile View](design/mobile-design.png)
+<img src="design/mobile-design.png" height="900">
 
 ### Links
 
